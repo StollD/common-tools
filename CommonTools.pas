@@ -3,6 +3,7 @@
 // Licensed under the terms of the MIT license
 
 // Include unit files
+{$DEFINE COMMON-TOOLS}
 
 // Internals
 print in 'common-tools/Internals/Print.pas',
