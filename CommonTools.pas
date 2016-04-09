@@ -5,9 +5,6 @@
 // Include unit files
 {$DEFINE COMMON-TOOLS}
 
-// Internals
-print in 'common-tools/Internals/Print.pas',
-
 // Units
 write_ in 'common-tools/Units/Write_.pas',
 

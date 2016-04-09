@@ -20,11 +20,20 @@ interface
 // Create their method bodies
 implementation
     uses
-        print,
+        {$IFDEF MSWINDOWS}
+        Windows,
+        {$ENDIF}
         Crt_D7;
     procedure write(text : string);
     begin
-        internal_print_(text);
+        {$IFDEF MSWINDOWS}
+        var ansistr : string;
+        SetLength(ansistr, Length(text));
+        CharToOEM(PChar(text), PChar(ansistr));
+        System.Write(ansistr);
+        {$ELSE}
+        System.Write(text);
+        {$ENDIF}
     end;
     procedure write(text : string; color : TColor); overload;
     begin
@@ -42,7 +51,14 @@ implementation
     end;
     procedure writeln(text : string);
     begin
-        internal_println_(text);
+        {$IFDEF MSWINDOWS}
+        var ansistr : string;
+        SetLength(ansistr, Length(text));
+        CharToOEM(PChar(text), PChar(ansistr));
+        System.WriteLn(ansistr);
+        {$ELSE}
+        System.WriteLn(text);
+        {$ENDIF}
     end;
     procedure writeln(text : string; color : TColor); overload;
     begin
