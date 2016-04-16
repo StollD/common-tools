@@ -14,16 +14,21 @@ implementation
 	{$IFDEF MSWINDOWS}
 	uses Windows;
 	{$ENDIF}
-	function ConvertToDos(input : string) : string;
+	function ConvertToDos(input : string) : string;   
+    var ansistr : string;
 	begin
-		{$IFDEF MSWINDOWS}
-		var ansistr : string;
-		SetLength(ansistr, Length(text));
-		CharToOEM(PChar(text), PChar(ansistr));
-		Result := ansistr;
-		{$ELSE}
+    {$IFDEF MSWINDOWS}
+        if not input = '' then
+        begin
+            SetLength(ansistr, Length(text));
+            CharToOEM(PChar(text), PChar(ansistr));
+            Result := ansistr;
+        end;
+        else
+            Result := input;
+    {$ELSE}
 		Result := input;
-		{$ENDIF}
+    {$ENDIF}
 	end;
 	
 end.
