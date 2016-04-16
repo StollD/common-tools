@@ -6,7 +6,8 @@
 {$DEFINE COMMON-TOOLS}
 
 // Units
-write_ in 'common-tools/Units/Write_.pas',
+writeline in 'common-tools/Units/WriteLine.pas',
+readline in 'common-tools/Units/ReadLine.pas',
 todos in 'common-tools/Units/ToDos.pas',
 
 // Enums
