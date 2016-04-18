@@ -3,6 +3,7 @@
 // Licensed under the terms of the MIT license
 
 // Include unit files
+{$IFNDEF COMMON-TOOLS}
 {$DEFINE COMMON-TOOLS}
 
 // Units
@@ -15,3 +16,4 @@ colors in 'common-tools/Enums/Colors.pas',
 
 // Borland CRT
 Crt_D7 in 'common-tools/CRT/crt_D7.pas'
+{$ENDIF}
