@@ -7,16 +7,16 @@ unit todos;
 
 // Export the functions
 interface
-	function ConvertToDos(input : string) : string;
+    function ConvertToDos(input : string) : string;
 
 // Create their method bodies
 implementation
-	{$IFDEF MSWINDOWS}
-	uses Windows;
-	{$ENDIF}
-	function ConvertToDos(input : string) : string;   
-	var ansistr : string;
-	begin
+    {$IFDEF MSWINDOWS}
+    uses Windows;
+    {$ENDIF}
+    function ConvertToDos(input : string) : string;   
+    var ansistr : string;
+    begin
     {$IFDEF MSWINDOWS}
         if not input = '' then
         begin
@@ -27,8 +27,8 @@ implementation
         else
             Result := input;
     {$ELSE}
-		Result := input;
+        Result := input;
     {$ENDIF}
-	end;
+    end;
 	
 end.
