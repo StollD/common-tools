@@ -18,12 +18,12 @@ implementation
     var ansistr : string;
     begin
     {$IFDEF MSWINDOWS}
-        if not input = '' then
+        if not (input = '') then
         begin
-            SetLength(ansistr, Length(text));
-            CharToOEM(PChar(text), PChar(ansistr));
+            SetLength(ansistr, Length(input));
+            CharToOEM(PChar(input), PChar(ansistr));
             Result := ansistr;
-        end;
+        end
         else
             Result := input;
     {$ELSE}
