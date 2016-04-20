@@ -15,7 +15,7 @@ implementation
 	uses Windows;
 	{$ENDIF}
 	function ConvertToDos(input : string) : string;   
-    var ansistr : string;
+	var ansistr : string;
 	begin
     {$IFDEF MSWINDOWS}
         if not input = '' then
