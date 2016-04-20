@@ -76,25 +76,25 @@ implementation
     begin
         textcolor(Ord(color));
         Write(text);
-        textcolor(Ord(White));
+        textcolor(Ord(LightGray));
     end;
     procedure Write(text : integer; color : TColor); overload;
     begin
         textcolor(Ord(color));
         Write(text);
-        textcolor(Ord(White));
+        textcolor(Ord(LightGray));
     end;
     procedure Write(text : real; color : TColor); overload;
     begin
         textcolor(Ord(color));
         Write(text);
-        textcolor(Ord(White));
+        textcolor(Ord(LightGray));
     end;
     procedure Write(text : boolean; color : TColor); overload;
     begin
         textcolor(Ord(color));
         Write(text);
-        textcolor(Ord(White));
+        textcolor(Ord(LightGray));
     end;
 
     // Write + Foreground Color + Background Color
@@ -103,7 +103,7 @@ implementation
         textbackground(Ord(bgcolor));
         textcolor(Ord(color));
         Write(text);
-        textcolor(Ord(White));
+        textcolor(Ord(LightGray));
         textbackground(Ord(Black));
     end;
     procedure Write(text : integer; color : TColor; bgcolor : TColor); overload;
@@ -111,7 +111,7 @@ implementation
         textbackground(Ord(bgcolor));
         textcolor(Ord(color));
         Write(text);
-        textcolor(Ord(White));
+        textcolor(Ord(LightGray));
         textbackground(Ord(Black));
     end;
     procedure Write(text : real; color : TColor; bgcolor : TColor); overload;
@@ -119,7 +119,7 @@ implementation
         textbackground(Ord(bgcolor));
         textcolor(Ord(color));
         Write(text);
-        textcolor(Ord(White));
+        textcolor(Ord(LightGray));
         textbackground(Ord(Black));
     end;
     procedure Write(text : boolean; color : TColor; bgcolor : TColor); overload;
@@ -127,7 +127,7 @@ implementation
         textbackground(Ord(bgcolor));
         textcolor(Ord(color));
         Write(text);
-        textcolor(Ord(White));
+        textcolor(Ord(LightGray));
         textbackground(Ord(Black));
     end;
 
@@ -154,25 +154,25 @@ implementation
     begin
         textcolor(Ord(color));
         WriteLn(text);
-        textcolor(Ord(White));
+        textcolor(Ord(LightGray));
     end;
     procedure WriteLn(text : integer; color : TColor); overload;
     begin
         textcolor(Ord(color));
         WriteLn(text);
-        textcolor(Ord(White));
+        textcolor(Ord(LightGray));
     end;
     procedure WriteLn(text : real; color : TColor); overload;
     begin
         textcolor(Ord(color));
         WriteLn(text);
-        textcolor(Ord(White));
+        textcolor(Ord(LightGray));
     end;
     procedure WriteLn(text : boolean; color : TColor); overload;
     begin
         textcolor(Ord(color));
         WriteLn(text);
-        textcolor(Ord(White));
+        textcolor(Ord(LightGray));
     end;
 
     // WriteLn + Foreground Color + Background Color
@@ -181,7 +181,7 @@ implementation
         textbackground(Ord(bgcolor));
         textcolor(Ord(color));
         WriteLn(text);
-        textcolor(Ord(White));
+        textcolor(Ord(LightGray));
         textbackground(Ord(Black));
     end;
     procedure WriteLn(text : integer; color : TColor; bgcolor : TColor); overload;
@@ -189,7 +189,7 @@ implementation
         textbackground(Ord(bgcolor));
         textcolor(Ord(color));
         WriteLn(text);
-        textcolor(Ord(White));
+        textcolor(Ord(LightGray));
         textbackground(Ord(Black));
     end;
     procedure WriteLn(text : real; color : TColor; bgcolor : TColor); overload;
@@ -197,7 +197,7 @@ implementation
         textbackground(Ord(bgcolor));
         textcolor(Ord(color));
         WriteLn(text);
-        textcolor(Ord(White));
+        textcolor(Ord(LightGray));
         textbackground(Ord(Black));
     end;
     procedure WriteLn(text : boolean; color : TColor; bgcolor : TColor); overload;
@@ -205,7 +205,7 @@ implementation
         textbackground(Ord(bgcolor));
         textcolor(Ord(color));
         WriteLn(text);
-        textcolor(Ord(White));
+        textcolor(Ord(LightGray));
         textbackground(Ord(Black));
     end;
 
